@@ -1,0 +1,159 @@
+{
+	"info": {
+		"_postman_id": "23a87716-5f57-4f44-b3cd-3c0ba6d4c2e3",
+		"name": "Desafio 8D Hubify",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28068287"
+	},
+	"item": [
+		{
+			"name": "Criar contato",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Pedro\",\r\n    \"email\": \"batata@batata.batata\",\r\n    \"telefone\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/leads/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"leads",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar contatos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/leads/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"leads",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar contato",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/leads/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"leads",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar negocicação",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"titulo\": \"Pedro\",\r\n    \"lead_id\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/negociacoes/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"negociacoes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lista negociações",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/negociacoes/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"negociacoes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Busca negociações",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Atualiza funil",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
